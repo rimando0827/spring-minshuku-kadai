@@ -40,7 +40,7 @@ public class AdminUserController {
 	        return "admin/users/index";
 	    }
 	    
-	    @GetMapping("{id}")
+	    @GetMapping("/{id}")
 	    public String show(@PathVariable(name="id") Integer id , Model model) {
 	    	User user = userRepository.getReferenceById(id);
 	    	
